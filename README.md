@@ -2,6 +2,7 @@
 Datos-Ani: Farm’s Harvest and Economic Performance with Crop Rotation  Management for Harvested Crops
 
 CONTRIBUTORS:
+
 Marabilla, Ralph Russel C.
 
 Fortunado, Chrisfel Mae C. 
