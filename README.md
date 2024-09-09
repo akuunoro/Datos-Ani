@@ -1,4 +1,4 @@
-# Datos-Ani: Farm Managementment System - Java Swing with SQL 
+# Datos-Ani: Farm Managementment System - Java Swing and Java AWT with SQL 
 
 
 A simple and optimized farm management system - Datos-Ani - utilizing both Java Swing and Java AWT, connecting it with SQL and having a one-tier architecture database model.
