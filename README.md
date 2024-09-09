@@ -1,21 +1,11 @@
-# Datos-Ani
-Datos-Ani: Farm’s Harvest and Economic Performance with Crop Rotation  Management for Harvested Crops
+# Datos-Ani: Farm Managementment System - Java Swing with SQL 
 
-CONTRIBUTORS:
 
-Marabilla, Ralph Russel C.
+A simple and optimized farm management system - Datos-Ani - utilizing both Java Swing and Java AWT, connecting it with SQL and having a one-tier architecture database model.
 
-Fortunado, Chrisfel Mae C. 
 
-Lagos, Phoebe Ann C. 
 
-Pataray, Russel D. 
 
-Salonga, Neil Andrei A. 
-
-"Datos-Ani" is our project fulfillment for our subject Database Management System (DBMS).
-
-![Datos-Ani Title Proposal](https://github.com/wolfD-red/Datos-Ani/assets/149870730/343f5938-3721-4619-9bc5-7f73b535cbb7)
 
 
 Datos-Ani Logo
