@@ -48,7 +48,7 @@ Datos-Ani Icon Logo
 
 
 
-## How it Works
+### How it Works
 
 
 
@@ -144,16 +144,60 @@ The user icon at the top right corner will lead you to the Sign Out Panel
   ![User Sign Out](https://github.com/user-attachments/assets/88877644-8a54-44d9-b8d3-1c21260a4319)
 
 
-## How to Install? - For End Users
+### How to Install? - For End Users
 
 
 
 To make the application up and running follow these instructions:
 
-1. Download this repository as zip file.
+1. Download this repository as a zip file. 
 2. Extract the zip file.
-3. Install MySQL Community Version or any SQL system software. I recommend using MySQL: [SQL](https://dev.mysql.com/downloads/installer/)
-4. 
-  
+3. Install MySQL Community Version or any SQL system software. I recommend using MySQL: [MySQL](https://dev.mysql.com/downloads/installer/)
+4. Open the 'Database (SQL Queries)' folder and open every file there to execute all the queries. In order to setup a database.
+5. Open the 'DatosAni.jar' file. 
+
+
+
+
+### How to Install? - For Developers
+
+
+For the developers who want to make some changes, contribution or use the source code of the project.
+
+Follow these instructions:
+
+1. Download this repository as a zip file. 
+2. Extract the zip file.
+3. I assume that you have any SQL system software already. However, if you don't have one - Download MySQL: [MySQL](https://dev.mysql.com/downloads/installer/)
+4. Open the 'Database (SQL Queries)' folder and open every file there to execute all the queries. In order to setup a database.
+   
+     If you want to make changes to the database or use it. Here's the ER Diagram for its logic:
+
+   ![Entity-Relationship (ER) Model - Datos-Ani](https://github.com/user-attachments/assets/f8340ab2-8161-4d11-bda6-e86cd4e2f404)
+
+5. Open any IDE dedicated for Java. Either [Eclipse](https://www.eclipse.org/downloads/) or [NetBeans](https://netbeans.apache.org/front/main/download/nb120/nb120/).
+6. Add each library in the 'lib' folder to the library class of your project.
+7. Run it. 
+
+
+### Known Issues (In Development)
+
+If you notice there are additional java files and templates also tables in the database that pertains to scheduling of crops planting, crops harvesting, and crop rotation that didn't made the final cut. It's a feature that I haven't been able to add yet or let's just say, not ready to add yet as I am still thinking for ways to implement it better. However, it is already optimized and runnable, you can add it to the system if you want to try it. I need some time to think for other ways to approach the scheduling feature. 
+
+In addition, it still lacks the appropriate user feature but we already have a plan for it. 
+
+Here's the UI design created by Chrisfel Mae Fortunado for it: 
+
+![User Info](https://github.com/user-attachments/assets/369a855c-813c-48b6-b933-ee39f16fffd3)
+
+These two (2) features are coming soon.
+
+     
+### Contributors
+
+Front-end Developer(s): Russel Pataray & Phoebe Ann Lagos
+Back-end Developer(s): Ralph Russel Marabilla
+Graphic Designer and Documentation: Chrisfel Mae Fortunado
+Documentation: Neil Andrei Salonga
 
 
