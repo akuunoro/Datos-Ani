@@ -141,7 +141,7 @@ Datos-Ani Icon Logo
 The user icon at the top right corner will lead you to the Sign Out Panel
 
 
-
+  ![User Sign Out](https://github.com/user-attachments/assets/88877644-8a54-44d9-b8d3-1c21260a4319)
 
 
 ## How to Install? - For End Users
@@ -152,21 +152,8 @@ To make the application up and running follow these instructions:
 
 1. Download this repository as zip file.
 2. Extract the zip file.
-3. Install MySQL Community Version or any SQL system software. I recommend using MySQL: [SQL(https://dev.mysql.com/downloads/installer/)]
+3. Install MySQL Community Version or any SQL system software. I recommend using MySQL: [SQL](https://dev.mysql.com/downloads/installer/)
 4. 
-
-
-
-
-
-
-
-
-
-
-  ![User Sign Out](https://github.com/user-attachments/assets/88877644-8a54-44d9-b8d3-1c21260a4319)
-
-
   
 
 
