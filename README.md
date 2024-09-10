@@ -197,7 +197,7 @@ These two (2) features are coming soon.
 
 Front-end Developer(s): Russel Pataray & Phoebe Ann Lagos
 
-Back-end Developer(s): Ralph Russel Marabilla
+Back-end Developer(s): Ralph Russel Marabilla || @akuunoro
 
 Graphic Designer and Documentation: Chrisfel Mae Fortunado
 
