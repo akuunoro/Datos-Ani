@@ -196,8 +196,12 @@ These two (2) features are coming soon.
 ### Contributors
 
 Front-end Developer(s): Russel Pataray & Phoebe Ann Lagos
+
 Back-end Developer(s): Ralph Russel Marabilla
+
 Graphic Designer and Documentation: Chrisfel Mae Fortunado
+
 Documentation: Neil Andrei Salonga
+
 
 
