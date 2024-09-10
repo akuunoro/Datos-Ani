@@ -137,7 +137,8 @@ Datos-Ani Icon Logo
 
 
 * Sign Out
-     The user icon at the top right corner will lead you to the Sign Out Panel
+
+The user icon at the top right corner will lead you to the Sign Out Panel
 
 
   ![User Sign Out](https://github.com/user-attachments/assets/88877644-8a54-44d9-b8d3-1c21260a4319)
