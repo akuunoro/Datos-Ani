@@ -45,3 +45,34 @@ Datos-Ani Icon Logo
 
 ![9-removebg-preview](https://github.com/wolfD-red/Datos-Ani/assets/149870730/5437401f-6a36-4402-ae1b-3927f669769c)
 
+
+
+
+## System Features - Visual
+
+
+* Home
+
+
+![Home](https://github.com/user-attachments/assets/75a7ce69-c91c-45a3-a7ce-4093c08ec3f9)
+
+
+* About (What is Datos-Ani?)
+
+
+![About](https://github.com/user-attachments/assets/0456aa2b-1df0-48d5-ba5f-f40a2905304f)
+
+
+* Sign in
+
+
+![Sign In](https://github.com/user-attachments/assets/d5059a5b-1797-4ec9-930e-880519f705e4)
+
+
+* Sign up
+
+
+![Sign Up](https://github.com/user-attachments/assets/cabff740-5ee5-4a4d-ab97-0b147a502476)
+
+
+
