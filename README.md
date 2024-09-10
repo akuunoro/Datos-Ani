@@ -48,7 +48,9 @@ Datos-Ani Icon Logo
 
 
 
-## System Features - Visual
+## How it Works
+
+
 
 
 * Home
@@ -75,4 +77,8 @@ Datos-Ani Icon Logo
 ![Sign Up](https://github.com/user-attachments/assets/cabff740-5ee5-4a4d-ab97-0b147a502476)
 
 
+* OTP Authentication
+
+
+  ![Uploading Verify OTP.png…]()
 
