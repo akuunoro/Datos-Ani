@@ -31,6 +31,9 @@ This is a project that aims to tie the bridge between technology and agriculture
 • One-Time Password (OTP) Authentication using email addresses for securing sensitive data by utilizing JavaMail API.
 
 
+     
+
+
 Datos-Ani Logo
 
 
