@@ -1,10 +1,10 @@
-# Datos-Ani: Farm Managementment System - Java Swing and Java AWT with SQL 
+# Datos-Ani: Farm Managementment System - Java Swing and Java AWT with mySQL 
 
 
-## A simple and optimized farm management system - Datos-Ani - utilizing both Java Swing and Java AWT, connecting it with SQL and having a one-tier architecture database model.
+## A simple and optimized farm management system - Datos-Ani - utilizing both Java Swing and Java AWT, connecting it with database/SQL and having a one-tier architecture database model.
 
 
-This is a project that aims to tie the bridge between technology and agriculture by helping farmers manage and keep track of the harvest and economic performance of their farms, and crop rotation. This project is possible by utilizing Java NetBeans and SQL. The detailed features of the application are as follows:
+This is a project that aims to tie the bridge between technology and agriculture by helping farmers manage and keep track of the harvest and economic performance of their farms, and crop rotation. This project is possible by utilizing Java NetBeans and mySQL. The detailed features of the application are as follows:
 
 • Harvest and economic performance, the application will curate or organize the inputted data by the farmers to be concrete and easily understood information. This will allow the farmers to easily assess the performance of their harvest and its economic performance. 
 
