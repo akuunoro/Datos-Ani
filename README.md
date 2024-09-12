@@ -177,7 +177,11 @@ Follow these instructions:
 
 5. Open any IDE dedicated for Java. Either [Eclipse](https://www.eclipse.org/downloads/) or [NetBeans](https://netbeans.apache.org/front/main/download/nb120/nb120/).
 6. Add each library in the 'lib' folder to the library class of your project.
-7. Run it. 
+7. Go to Source Packages -> datosani -> verifyOTP.java
+8. Open the 'Source' at line 73 to 78 lies the block of codes for the sender of the OTP.
+9. Put your desired email address to be the sender of the OTP and its app password.
+10. You can find and create your app password on your Google Accout -> Security -> 2-Step Verification -> App Password.
+12. Clean and Build Project then Run it.
 
 
 ### Known Issues (In Development)
