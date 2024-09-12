@@ -24,6 +24,7 @@ public class interfacesignup extends javax.swing.JFrame {
     private int botanicfam_code;
     
     public interfacesignup(int loggedInFarmerId, int botanicfam_code) {
+        
         this.loggedInFarmerId = loggedInFarmerId;
         this.botanicfam_code = botanicfam_code;
         initComponents();
@@ -47,6 +48,7 @@ public class interfacesignup extends javax.swing.JFrame {
         for (int i = 1; i <= 31; i++) {
             cmb_bdday.addItem(String.valueOf(i));
         }
+        
         cmb_bdyear.addItem("");
         for (int i = 2024; i >= 1900; i--) {
             cmb_bdyear.addItem(String.valueOf(i));
@@ -328,36 +330,38 @@ public class interfacesignup extends javax.swing.JFrame {
         String genderset, month, day, year;
         
         
-        if("".equals(txt_Sulastname.getText())){
+        if ("".equals(txt_Sulastname.getText())){
             JOptionPane.showMessageDialog(new JFrame(), "Enter Last Name");
         }
-        if ("".equals(txt_Sumiddlename.getText())){
+        else if ("".equals(txt_Sumiddlename.getText())){
             JOptionPane.showMessageDialog(new JFrame(), "Enter Middle Name");
         }
-        if ("".equals(txt_Sufirstname.getText())){
+        else if ("".equals(txt_Sufirstname.getText())){
             JOptionPane.showMessageDialog(new JFrame(), "Enter Last Name");
         }
-        if ("".equals(txt_Suaddress.getText())){
+        else if ("".equals(txt_Suaddress.getText())){
             JOptionPane.showMessageDialog(new JFrame(), "Enter Address");
         }
-        if ("".equals(txt_Sumobilenum.getText())){
+        else if ("".equals(txt_Sumobilenum.getText())){
             JOptionPane.showMessageDialog(new JFrame(), "Enter Mobile Number");
         }
-        if ("".equals(txt_SuEmail.getText())){
+        else if ("".equals(txt_SuEmail.getText())){
             JOptionPane.showMessageDialog(new JFrame(), "Enter Email Address");
         }
-        if ("".equals(txt_SuPassword.getText())){
+        else if ("".equals(txt_SuPassword.getText())){
             JOptionPane.showMessageDialog(new JFrame(), "Enter Password");
-        }
-        else{
+        } 
+        else {
             lastname = txt_Sulastname.getText();
             middlename = txt_Sumiddlename.getText();
             firstname = txt_Sufirstname.getText();
             address = txt_Suaddress.getText();
+            
             if (btn_genderm.isSelected()){
                 genderset = "Male";
                 gender = genderset;
             }
+            
             if (btn_genderf.isSelected()){
                 genderset = "Female";
                 gender = genderset;
@@ -372,7 +376,7 @@ public class interfacesignup extends javax.swing.JFrame {
             return;
             }
 
-        // Concatenate birthdate components into a single string
+        // Concatenate (Pagsamahin) birthdate components into a single string
             String birthdate = month + "-" + day + "-" + year;
             
             
@@ -382,11 +386,13 @@ public class interfacesignup extends javax.swing.JFrame {
             
             
             try {
-            sqlconnector connector = sqlconnector.getInstance();
-            Connection connection = connector.getConnection();
-            String sql = "INSERT INTO farmer_info (frmr_last_name, frmr_middle_name, frmr_first_name, frmr_address, frmr_gender, "
+                
+                sqlconnector connector = sqlconnector.getInstance();
+                Connection connection = connector.getConnection();
+                String sql = "INSERT INTO farmer_info (frmr_last_name, frmr_middle_name, frmr_first_name, frmr_address, frmr_gender, "
                     + "frmr_mobilenum, frmr_birthdate, frmr_emailaddress, frmr_password) "
                     + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            
                 try (PreparedStatement pstmt = connection.prepareStatement(sql)) {
                     pstmt.setString(1, lastname);
                     pstmt.setString(2, middlename);
@@ -407,14 +413,14 @@ public class interfacesignup extends javax.swing.JFrame {
                         this.dispose();
                     } else {
                         JOptionPane.showMessageDialog(this, "Failed to sign up. Please try again.");
-                    }   }
+                    }   
+                }
             
             
-        } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(this, "Database error: " + ex.getMessage());
+            } catch (SQLException ex) {
+                JOptionPane.showMessageDialog(this, "Database error: " + ex.getMessage());
+            }
         }
-    }
-
     }//GEN-LAST:event_btn_SiSignupActionPerformed
 
 
@@ -427,15 +433,15 @@ public class interfacesignup extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_genderfActionPerformed
 
     private void cmb_bdyearComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_cmb_bdyearComponentAdded
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_cmb_bdyearComponentAdded
 
     private void cmb_bdmonthComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_cmb_bdmonthComponentAdded
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_cmb_bdmonthComponentAdded
 
     private void cmb_bddayComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_cmb_bddayComponentAdded
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_cmb_bddayComponentAdded
 
     private void btn_SiSigninActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SiSigninActionPerformed
