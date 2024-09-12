@@ -73,7 +73,7 @@ public class verifyOTP extends javax.swing.JFrame {
         Session session = Session.getInstance(props, new javax.mail.Authenticator() {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("marabilla.rr.bscs@gmail.com", "hkll rwrb llyc ijjt");
+                return new PasswordAuthentication("PUT-YOUR-EMAIL-HERE", "PUT-YOUR-APP-PASSWORD-HERE");
             }
         });
 
@@ -228,7 +228,7 @@ public class verifyOTP extends javax.swing.JFrame {
         try {
             int enteredOTP = Integer.parseInt(txt_OTP.getText());
             if (enteredOTP == otp) {
-                JOptionPane.showMessageDialog(this, "OTP verified! Signing In...");
+                JOptionPane.showMessageDialog(this, "OTP verified!");
                 
                 new insidelogin(loggedInFarmerId, showfirstname, getemail, botanicfam_code, plotlandcode, total_sales, total_costs, getrtdate).setVisible(true);
                 this.dispose();

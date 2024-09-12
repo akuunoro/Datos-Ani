@@ -17,6 +17,8 @@ public class insidelogin extends javax.swing.JFrame {
     private String total_sales;
     private String total_costs;
     
+    
+    //In development (Scheduling)
     private String getrtdate;
     private int ch_code;
     private int cr_code;
@@ -50,7 +52,11 @@ public class insidelogin extends javax.swing.JFrame {
         System.out.println("Botanic Family ID: " + botanicfam_code);
         System.out.println("Plot of Land Code: " + plotlandcode);
         
-        /*Date odate = new Date();
+        
+        // In development (Scheduling)
+        
+        /*
+        Date odate = new Date();
         SimpleDateFormat sdfodate = new SimpleDateFormat("MM-dd-yyyy");
         String showdateo = sdfodate.format(odate);
 

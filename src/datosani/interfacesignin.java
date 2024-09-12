@@ -226,77 +226,65 @@ public class interfacesignin extends javax.swing.JFrame {
     private void btn_gotoMainInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_gotoMainInActionPerformed
          String siemail, sipassword;
     
-    if ("".equals(txt_Siemail.getText())){
-        JOptionPane.showMessageDialog(new JFrame(), "Enter Email Address");
-    } else if ("".equals(txt_SiPassword.getText())){
-        JOptionPane.showMessageDialog(new JFrame(), "Enter Password");
-    } else {
-        siemail = txt_Siemail.getText();
-        sipassword = txt_SiPassword.getText();
+        if ("".equals(txt_Siemail.getText())){
+            JOptionPane.showMessageDialog(new JFrame(), "Enter Email Address");
+        } else if ("".equals(txt_SiPassword.getText())){
+            JOptionPane.showMessageDialog(new JFrame(), "Enter Password");
+        } else {
+            siemail = txt_Siemail.getText();
+            sipassword = txt_SiPassword.getText();
         
-        try {
-            sqlconnector connector = sqlconnector.getInstance();
-            Connection connection = connector.getConnection();
+            try {
+                sqlconnector connector = sqlconnector.getInstance();
+                Connection connection = connector.getConnection();
             
-            String sql = "SELECT farmer_id, frmr_first_name, frmr_emailaddress FROM farmer_info WHERE frmr_emailaddress = ? AND frmr_password = ?";
+                String sql = "SELECT farmer_id, frmr_first_name, frmr_emailaddress FROM farmer_info WHERE frmr_emailaddress = ? AND frmr_password = ?";
             
-            try (PreparedStatement pstmt = connection.prepareStatement(sql)) {
-                pstmt.setString(1, siemail);
-                pstmt.setString(2, sipassword);
+                try (PreparedStatement pstmt = connection.prepareStatement(sql)) {
+                    pstmt.setString(1, siemail);
+                    pstmt.setString(2, sipassword);
                 
-                ResultSet rs = pstmt.executeQuery();
+                    ResultSet rs = pstmt.executeQuery();
                 
-                if (rs.next()) {
-                    int loggedInFarmerId = rs.getInt("farmer_id"); // Store the logged-in farmer's ID
-                    String showfirstname = rs.getString("frmr_first_name");
-                    String getemail = rs.getString("frmr_emailaddress");
+                    if (rs.next()) {
+                        int loggedInFarmerId = rs.getInt("farmer_id"); // Store the logged-in farmer's ID
+                        String showfirstname = rs.getString("frmr_first_name");
+                        String getemail = rs.getString("frmr_emailaddress");
             
-            // Print retrieved values for debugging
-                    System.out.println("Logged in Farmer ID: " + loggedInFarmerId);
-                    System.out.println("Farmer First Name: " + showfirstname);
-                    System.out.println("Email Address: " + getemail);
-                    JOptionPane.showMessageDialog(new JFrame(), "Login successful!");
+                        // Print retrieved values for debugging
+                        System.out.println("Logged in Farmer ID: " + loggedInFarmerId);
+                        System.out.println("Farmer First Name: " + showfirstname);
+                        System.out.println("Email Address: " + getemail);
+                        JOptionPane.showMessageDialog(new JFrame(), "Login successful!");
                     
                     
-                    //otp
-                    Random randomotp = new Random();
-                    int minnumotp = 100000;
-                    int maxnumotp = 999999;
+                        //otp
+                        Random randomotp = new Random();
+                        int minnumotp = 100000;
+                        int maxnumotp = 999999;
    
-                    otp = randomotp.nextInt(maxnumotp-minnumotp)+minnumotp;
+                        otp = randomotp.nextInt(maxnumotp-minnumotp)+minnumotp;
         
-                    addemail = getemail;
+                        addemail = getemail;
                     
 
                     
                     
-                    new verifyOTP(loggedInFarmerId, getemail, showfirstname, botanicfam_code, plotlandcode, total_sales, total_costs).setVisible(true);
+                        new verifyOTP(loggedInFarmerId, getemail, showfirstname, botanicfam_code, plotlandcode, total_sales, total_costs).setVisible(true);
      
-                    this.dispose();
-                } else {
-                    JOptionPane.showMessageDialog(new JFrame(), "No Account Found. Please try again.");
-                }
+                        this.dispose();
+                    } else {
+                        JOptionPane.showMessageDialog(new JFrame(), "No Account Found. Please try again.");
+                    }
                 
-                rs.close();
-            }
+                    rs.close();
+                }
             
-        } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(new JFrame(), "Database error: " + ex.getMessage());
+            } catch (SQLException ex) {
+                JOptionPane.showMessageDialog(new JFrame(), "Database error: " + ex.getMessage());
+            }
+            //Mag S-send Notificatiom    
         }
-        
-        
-        
-        //Mag S-send Notificatiom
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    }
     }//GEN-LAST:event_btn_gotoMainInActionPerformed
 
     private void btn_SiSigninActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SiSigninActionPerformed
